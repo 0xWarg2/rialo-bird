@@ -1,50 +1,68 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Rialo Bird Constitution
+<!-- 2D Browser-Playable Game Inspired by Flappy Bird -->
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Game Identity
+<!-- 🎯 Core Loop & Branding -->
+Every design decision must reinforce the core identity: simple, addictive, skill-based gameplay with "easy to play, hard to master" philosophy. All assets (bird, pipes, background) must reflect company branding in a playful but professional style. Tone must be fun, modern, energetic, but never childish.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Visual Design Standards
+<!-- 🖼️ Asset Requirements -->
+Assets must use clean 2D style with transparent backgrounds. Character (logo-bird): 128x128 base, scalable. Pipes: tall vertical format, modular, scalable (recommended design size 200x1200 → scaled down). Background: layered (sky gradient, skyline silhouettes, clouds/icons) for parallax effect. UI: minimalist, flat, aligned with company typography/colors.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Audio & Feedback Consistency
+<!-- 🔊 Sound Design -->
+Background music: upbeat electronic/chiptune loop, non-distracting. SFX: consistent, playful, short (flap = "whoosh," score = "bling," hit = "thud"). Audio volume balanced — never overpower visuals. All audio must enhance gameplay without becoming repetitive or annoying.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Gameplay Mechanics (NON-NEGOTIABLE)
+<!-- 🕹️ Core Loop First -->
+Start simple: flap → avoid pipes → score points. Add depth gradually: moving pipes, rotating obstacles, power-ups (shield, slow motion, double score). Fair challenge curve: gap sizes and speeds scale with player progress. Achievements & skins tied to score milestones. Core loop must be perfected before adding complexity.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Online Integration & Data
+<!-- 🌍 Supabase Integration -->
+Leaderboard powered by Supabase. Store: player name + score (anonymous by default). Safe RLS policies for inserts/selects. Future extension: optional Supabase Auth login. Data persistence: local JSON save (IndexedDB). All online features must be optional and gracefully degrade when offline.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Technical Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### VI. Technology Stack
+<!-- 🚀 Framework & Deployment -->
+Framework: Python Arcade for game logic. Web build: pygbag → WebAssembly for browser play. Hosting: itch.io, GitHub Pages, or Netlify (static deploy). Optimize assets (power-of-two sizes, compressed PNG). All builds must be cross-browser compatible and performant on mobile devices.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### VII. Performance Requirements
+<!-- ⚡ Optimization Standards -->
+Game must run at 60 FPS on modern browsers. Asset loading must be optimized for web delivery. Audio files must be compressed without quality loss. All animations must be smooth and responsive. Mobile touch controls must be intuitive and responsive.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow
+
+### VIII. Project Phases
+<!-- 📅 Development Process -->
+1. Prototype core loop with placeholder assets
+2. Replace with branded assets (bird, pipes, background)
+3. Add HUD, UI, menus
+4. Integrate Supabase leaderboard
+5. Polish with animations, effects, music, and SFX
+6. Test cross-browser & deploy
+
+### IX. Quality Gates
+<!-- ✅ Testing Requirements -->
+Core gameplay must be tested on multiple browsers before deployment. All assets must be optimized and compressed. Audio must be balanced and non-repetitive. Mobile responsiveness must be verified. Leaderboard functionality must be tested with real data.
+
+## Creative Extensions
+
+### X. Future Features
+<!-- 💡 Expansion Ideas -->
+Seasonal skins (holidays, events). Endless ticker with company news at screen bottom. Multiplayer (split-screen or score-race). Lucky pipes with bonus effects. All extensions must maintain core gameplay integrity and brand consistency.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+### XI. Constitution Authority
+<!-- 📜 Rule Enforcement -->
+This constitution supersedes all other practices and design decisions. Consistency > Complexity. Always prioritize smooth gameplay, strong branding, and accessible design before adding advanced features. All development decisions must align with these principles.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+### XII. Amendment Process
+<!-- 🔄 Change Management -->
+Amendments require documentation, approval, and migration plan. All PRs/reviews must verify compliance with constitution principles. Complexity must be justified against core gameplay goals. Use this constitution for all runtime development guidance.
+
+**Version**: 1.0.0 | **Ratified**: 2025-01-27 | **Last Amended**: 2025-01-27
+<!-- Rialo Bird Game Constitution - Initial Version -->
