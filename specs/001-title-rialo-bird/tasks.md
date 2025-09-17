@@ -60,17 +60,17 @@
 - [x] T012 [P] Integration test Supabase leaderboard in game/tests/integration/test_leaderboard.py
 
 ## Phase 3.3: Core Implementation (ONLY after tests are failing)
-- [ ] T013 [P] Settings entity model in game/src/models/settings.py
-- [ ] T014 [P] SaveData entity model in game/src/models/save_data.py
-- [ ] T015 [P] GameState enum in game/src/models/game_state.py
-- [ ] T016 [P] Bird entity model in game/src/entities/bird.py
-- [ ] T017 [P] Pipe entity model in game/src/entities/pipe.py
-- [ ] T018 [P] Score entity model in game/src/entities/score.py
-- [ ] T019 [P] Background entity model in game/src/entities/background.py
-- [ ] T020 Physics system in game/src/systems/physics.py
-- [ ] T021 Collision detection system in game/src/systems/collision.py
-- [ ] T022 Scoring system in game/src/systems/scoring.py
-- [ ] T023 Pipe generation system in game/src/systems/pipe_generator.py
+- [x] T013 [P] Settings entity model in game/src/models/settings.py
+- [x] T014 [P] SaveData entity model in game/src/models/save_data.py
+- [x] T015 [P] GameState enum in game/src/models/game_state.py
+- [x] T016 [P] Bird entity model in game/src/entities/bird.py
+- [x] T017 [P] Pipe entity model in game/src/entities/pipe.py
+- [x] T018 [P] Score entity model in game/src/entities/score.py
+- [x] T019 [P] Background entity model in game/src/entities/background.py
+- [x] T020 Physics system in game/src/systems/physics.py
+- [x] T021 Collision detection system in game/src/systems/collision.py
+- [x] T022 Scoring system in game/src/systems/scoring.py
+- [x] T023 Pipe generation system in game/src/systems/pipe_generator.py
 
 ## Phase 3.4: Game States & UI
 - [ ] T024 [P] MainMenu state in game/src/states/main_menu.py
@@ -79,7 +79,7 @@
 - [ ] T027 [P] GameOver state in game/src/states/game_over.py
 - [ ] T028 [P] LeaderboardView state in game/src/states/leaderboard_view.py
 - [ ] T029 [P] Settings state in game/src/states/settings.py
-- [ ] T030 Game state manager in game/src/states/game_state_manager.py
+- [x] T030 Game state manager in game/src/states/game_state_manager.py
 - [ ] T031 [P] HUD UI components in game/src/ui/hud.py
 - [ ] T032 [P] Menu UI components in game/src/ui/menu.py
 - [ ] T033 [P] Button UI components in game/src/ui/button.py
