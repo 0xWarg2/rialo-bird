@@ -51,13 +51,13 @@
 
 ## Phase 3.2: Tests First (TDD) ⚠️ MUST COMPLETE BEFORE 3.3
 **CRITICAL: These tests MUST be written and MUST FAIL before ANY implementation**
-- [ ] T006 [P] Contract test GET /leaderboard in game/tests/contract/test_leaderboard_get.py
-- [ ] T007 [P] Contract test POST /leaderboard in game/tests/contract/test_leaderboard_post.py
-- [ ] T008 [P] Integration test game state transitions in game/tests/integration/test_game_states.py
-- [ ] T009 [P] Integration test physics system in game/tests/integration/test_physics.py
-- [ ] T010 [P] Integration test collision detection in game/tests/integration/test_collision.py
-- [ ] T011 [P] Integration test scoring system in game/tests/integration/test_scoring.py
-- [ ] T012 [P] Integration test Supabase leaderboard in game/tests/integration/test_leaderboard.py
+- [x] T006 [P] Contract test GET /leaderboard in game/tests/contract/test_leaderboard_get.py
+- [x] T007 [P] Contract test POST /leaderboard in game/tests/contract/test_leaderboard_post.py
+- [x] T008 [P] Integration test game state transitions in game/tests/integration/test_game_states.py
+- [x] T009 [P] Integration test physics system in game/tests/integration/test_physics.py
+- [x] T010 [P] Integration test collision detection in game/tests/integration/test_collision.py
+- [x] T011 [P] Integration test scoring system in game/tests/integration/test_scoring.py
+- [x] T012 [P] Integration test Supabase leaderboard in game/tests/integration/test_leaderboard.py
 
 ## Phase 3.3: Core Implementation (ONLY after tests are failing)
 - [ ] T013 [P] Settings entity model in game/src/models/settings.py
