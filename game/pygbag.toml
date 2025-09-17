@@ -1,0 +1,60 @@
+[build]
+# Main entry point
+main = "src/main.py"
+
+# Build output directory
+build_dir = "build/web"
+
+# WebAssembly specific settings
+[web]
+# Title for the web page
+title = "Rialo Bird"
+
+# Icon for the web page (optional)
+# icon = "assets/icon.png"
+
+# Background color
+background_color = "#87CEEB"
+
+# Fullscreen mode
+fullscreen = false
+
+# Enable/disable features
+enable_audio = true
+enable_webgl = true
+enable_wasm = true
+
+# Performance settings
+[performance]
+# Target FPS
+target_fps = 60
+
+# Memory settings
+max_memory = 256  # MB
+
+# Asset optimization
+compress_assets = true
+optimize_images = true
+
+# Build settings
+[build_settings]
+# Compile optimizations
+optimize = 2  # 0=debug, 1=fast, 2=small
+
+# Include debug info
+debug = false
+
+# Source maps for debugging
+source_maps = false
+
+# Browser compatibility
+[compatibility]
+# Minimum browser versions
+min_chrome = "57"
+min_firefox = "52"
+min_safari = "11"
+min_edge = "16"
+
+# Feature detection
+check_features = true
+

@@ -43,11 +43,11 @@
 - **Build output**: `game/build/web/` for pygbag WebAssembly
 
 ## Phase 3.1: Setup
-- [ ] T001 Create game project structure per implementation plan
-- [ ] T002 Initialize Python project with Arcade and pygbag dependencies
-- [ ] T003 [P] Configure linting and formatting tools (black, flake8)
-- [ ] T004 [P] Setup virtual environment and requirements.txt
-- [ ] T005 [P] Configure pygbag build settings for WebAssembly
+- [x] T001 Create game project structure per implementation plan
+- [x] T002 Initialize Python project with Arcade and pygbag dependencies
+- [x] T003 [P] Configure linting and formatting tools (black, flake8)
+- [x] T004 [P] Setup virtual environment and requirements.txt
+- [x] T005 [P] Configure pygbag build settings for WebAssembly
 
 ## Phase 3.2: Tests First (TDD) ⚠️ MUST COMPLETE BEFORE 3.3
 **CRITICAL: These tests MUST be written and MUST FAIL before ANY implementation**
